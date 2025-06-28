@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="=X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- GSAP CDN for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body class="dark-mode">
+
+    <header class="header">
+        <a href="#" class="logo">OJW</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#services">Service</a>
+            <a href="#portfolio">Project</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="bx bx-sun" id="darkmode"></div>
+        
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- home -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Oneli Jayodya</h1>
+            <p>I'm an enthusiastic and motivated undergradute with a passion for technology. 
+               I'm eager to gain real-world experience through an internship where I can contribute, learn from professionals, and grow as a developer.</p>
+            
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/oneli-jayodya-b32018299/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.youtube.com/@LearnUp-oneli"><i class='bx bxl-youtube'></i></a>
+                <a href="https://medium.com/@ojwijesinghe"><i class='bx bxl-medium-square'></i></a>
+                <a href="https://github.com/oneli-jayodya"><i class='bx bxl-github'></i></a>
+            </div>
+
+            <a href="CV_internship.pdf" class="btn">Download CV</a>
+        </div>
+
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <i class='bx bx-laptop'></i> 
+                    <h3>UI/UX Designer</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class='bx bx-code-block'></i>
+                    <h3>Fullstack developer</h3>
+                </div>
+                <div class="profession" style="--i:3;">
+                    <i class='bx bx-bug'></i>
+                    <h3>Quality Assurance</h3>
+                </div>
+
+                <div class="circle"></div>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
+        <div class="home-img">
+            <img src="self-image.png" alt="me">
+        </div>
+    </section>
+
+     <!-- about -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="me.png" alt="aboutme" >
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About<span>Me</span></h2>
+            <h3>Hi, I'm Here To Help Your Next Project !</h3>
+            <p>I'm a motivated Software Engineering undergradute eager to apply 
+                my academic knowledge and project experience in real-world 
+                software development. I have a solid foundation in full-stack 
+                development and QA practices, enjoy working in teams, and 
+                quickly adapt to new programming languages and technologies. I'm 
+                looking forward to contributing to a dynamic and innovative team.
+            </p>
+            <a href="#" class="btn">Read More</a>    
+        </div>
+    </section>
+
+    <!-- education -->
+    <section class="education" id="education">
+        <h2 class="heading">My<span>Education</span></h2>
+        <div class="education-container">
+            <div class="education-item">
+                <div class="education-icon">
+                    <i class='bx bxs-graduation'></i>
+                </div>
+                <div class="education-content">
+                    <div class="education-year">2022 - Present</div>
+                    <h3>Bsc.(Hons) Software Engineering</h3>
+                    <h4>Lanka Nippon BizTech Institute</h4>
+                    <p>Pursuing degree in Software Engineering with focus on full-stack development, 
+                       Designing, and modern programming practices. Gaining hands-on experience in 
+                       various programming languages and development methodologies.</p>
+                    <div class="education-skills">
+                        <span class="skill-tag">Qulity Assurance</span>
+                        <span class="skill-tag">Database Management</span>
+                        <span class="skill-tag">Programming</span>
+                        <span class="skill-tag">Web Development</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="education-item">
+                <div class="education-icon">
+                    <i class='bx bxs-school'></i>
+                </div>
+                <div class="education-content">
+                    <div class="education-year">2021 - 2022</div>
+                    <h3>Diploma in Web Engineering</h3>
+                    <h4>IDM Campus, Galle</h4>
+                    <p>Completed with High Distinction, covering coding, and responsive web design.</p>
+                    <div class="education-skills">
+                        <span class="skill-tag">HTML\CSS</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">ASP.NET</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">MySQL</span>
+                    </div>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-icon">
+                    <i class='bx bxs-school'></i>
+                </div>
+                <div class="education-content">
+                    <div class="education-year">2020 - 2021</div>
+                    <h3>Diploma in English</h3>
+                    <h4>IDM Campus, Galle</h4>
+                    <p>Earned with High Distinction, enhancing my communication and writing skills.</p>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="education-icon">
+                    <i class='bx bxs-school'></i>
+                </div>
+                <div class="education-content">
+                    <div class="education-year">2019 - 2020</div>
+                    <h3>Diploma in Multimedia Integration</h3>
+                    <h4>IDM Campus, Galle</h4>
+                    <p>Gained hands-on experience with design tools like Photoshop, Illustrator, and Premiere Pro.</p>
+                    <div class="education-skills">
+                        <span class="skill-tag">Photoshop</span>
+                        <span class="skill-tag">Illustrator</span>
+                        <span class="skill-tag">Premiere Pro</span>
+                        <span class="skill-tag">Autodesk Maya</span>
+                        <span class="skill-tag">Autodesk 3ds Max</span>
+                        <span class="skill-tag">CorelDraw</span>
+                        <span class="skill-tag">InDesign</span>
+                        <span class="skill-tag">Flash</span>
+                        <span class="skill-tag">Fireworks</span>
+                        <span class="skill-tag">AfterEffects</span>
+                    </div>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-icon">
+                    <i class='bx bxs-school'></i>
+                </div>
+                <div class="education-content">
+                    <div class="education-year">2018 - 2020</div>
+                    <h3>G.C.E Advanced Level</h3>
+                    <h4>G\Southlands Collage, Galle</h4>
+                    <p>Completed Advanced Level in Art stream</p>
+                    <div class="education-skills">
+                        <span class="skill-tag">Japanese</span>
+                        <span class="skill-tag">ICT</span>
+                        <span class="skill-tag">Sinhala</span>
+                        <span class="skill-tag">General English</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My<span>Skills</span></h2>
+        
+        <div class="skills-grid">
+            <!-- Programming Languages -->
+            <div class="skill-category">
+                <h3 class="category-title">Programming Languages</h3>
+                <div class="skills-icons">
+                    <div class="skill-icon">
+                        <i class='bx bxl-html5'></i>
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class='bx bxl-css3'></i>
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class='bx bxl-javascript'></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class='bx bxl-python'></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class='bx bxl-java'></i>
+                        <span>Java</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class='bx bx-code-curly'></i>
+                        <span>C#</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class='bx bx-code-block'></i>
+                        <span>C++</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frameworks & Libraries -->
+            <div class="skill-category">
+                <h3 class="category-title">Frameworks & Libraries</h3>
+                <div class="skills-icons">
+                    <div class="skill-icon">
+                        <i class='bx bxl-react'></i>
+                        <span>React</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class='bx bxl-nodejs'></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class='bx bxl-django'></i>
+                        <span>Django</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class='bx bx-leaf'></i>
+                        <span>Spring Boot</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class='bx bxl-flutter'></i>
+                        <span>Flutter</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class='bx bxl-tailwind-css'></i>
+                        <span>Tailwind</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Databases -->
+            <div class="skill-category">
+                <h3 class="category-title">Databases</h3>
+                <div class="skills-icons">
+                    <div class="skill-icon">
+                        <i class='bx bx-data'></i>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class='bx bxl-postgresql'></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class='bx bx-server'></i>
+                        <span>SQL Server</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools & Technologies -->
+            <div class="skill-category">
+                <h3 class="category-title">Tools & Technologies</h3>
+                <div class="skills-icons">
+                    <div class="skill-icon">
+                        <i class='bx bxl-git'></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class='bx bxl-github'></i>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class='bx bxl-visual-studio'></i>
+                        <span>VS Code</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class='bx bxl-docker'></i>
+                        <span>Docker</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class='bx bx-terminal'></i>
+                        <span>Terminal</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design & Animation -->
+            <div class="skill-category">
+                <h3 class="category-title">Design & Animation</h3>
+                <div class="skills-icons">
+                    <div class="skill-icon">
+                        <i class='bx bxl-figma'></i>
+                        <span>Figma</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class='bx bx-palette'></i>
+                        <span>UI/UX</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class='bx bx-play-circle'></i>
+                        <span>GSAP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="soft-skills">
+            <h3 class="skills-title">Soft Skills</h3>
+            <div class="soft-skills-grid">
+                <div class="soft-skill-item">
+                    <div class="soft-skill-icon">
+                        <i class='bx bx-group'></i>
+                    </div>
+                    <h4>Team Work</h4>
+                    <p>Collaborative approach to achieve common goals</p>
+                </div>
+                
+                <div class="soft-skill-item">
+                    <div class="soft-skill-icon">
+                        <i class='bx bx-chat'></i>
+                    </div>
+                    <h4>Communication</h4>
+                    <p>Clear and effective communication skills</p>
+                </div>
+                
+                <div class="soft-skill-item">
+                    <div class="soft-skill-icon">
+                        <i class='bx bx-bulb'></i>
+                    </div>
+                    <h4>Problem Solving</h4>
+                    <p>Analytical thinking and creative solutions</p>
+                </div>
+                
+                <div class="soft-skill-item">
+                    <div class="soft-skill-icon">
+                        <i class='bx bx-time'></i>
+                    </div>
+                    <h4>Time Management</h4>
+                    <p>Efficient planning and deadline management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services -->
+     <section class="services" id="services">
+        <h2 class="heading">My<span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <div class="icon-container">
+                    <i class='bx bx-code-alt'></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Design and develop responsive, user-friendly websites using modern frameworks. 
+                From landing pages to dynamic web applications, I bring ideas to life with clean and efficient code.
+                </p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+            <div class="services-box">
+                <div class="icon-container">
+                    <i class='bx bxs-file-doc'></i>
+                </div>
+                <h3>Documentation</h3>
+                <p>Create clear and well-structured technical documentation, user guides, and project reports. 
+                I help teams and clients understand systems better through organized and professional documentation.
+                </p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+            <div class="services-box">
+                <div class="icon-container">
+                    <i class='bx bxs-paint'></i>
+                </div>
+                <h3>UI/UX Designing</h3>
+                <p>Craft visually appealing and intuitive user interfaces that enhance the user experience. 
+                I design layouts that are both functional and aesthetically pleasing, ensuring consistency and accessibility across devices.
+                </p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+        <br/>
+        <div class="box" style="display: flex;">
+            <div class="stat">
+            <span class="number" data-target="1">0</span>
+            <span class="label">Client Project</span>
+            </div>
+            <div class="stat">
+            <span class="number" data-target="8">0</span>
+            <span class="label">Projects</span>
+            </div>
+            <div class="stat">
+            <span class="number" data-target="5">0</span>
+            <span class="label">Designs</span>
+            </div>
+        </div>
+
+
+     </section>
+
+     <!-- portfolio  -->
+     <section class="portfolio" id="portfolio">
+        <h2 class="heading">My<span>Projects</span></h2>
+        
+        <!-- Filter Navigation -->
+        <div class="filter-container" >
+            <div class="filter-btn active" data-filter="all">
+                <i class='bx bx-grid-alt'></i>
+                <span style="color: aliceblue;">All</span>
+            </div>
+            <div class="filter-btn" data-filter="fullstack">
+                <i class='bx bx-code-block'></i>
+                <span style="color: aliceblue;">Full Stack</span>
+            </div>
+            <div class="filter-btn" data-filter="frontend">
+                <i class='bx bx-laptop'></i>
+                <span style="color: aliceblue;">Frontend</span>
+            </div>
+            <div class="filter-btn" data-filter="backend">
+                <i class='bx bx-server'></i>
+                <span style="color: aliceblue;">Backend</span>
+            </div>
+            <div class="filter-btn" data-filter="uiux">
+                <i class='bx bx-palette'></i>
+                <span style="color: aliceblue;">UI/UX</span>
+            </div>
+        </div>
+
+        <div class="portfolio-container">
+            <!-- Full Stack Projects -->
+             <div class="portfolio-card" data-category="fullstack">
+                <div class="card-image">
+                    <img src="villa.png" alt="Wega Villa">
+                    <div class="overlay-gradient"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Wega Villa</h3>
+                        <span class="category-badge fullstack">Full Stack</span>
+                        <span class="client-badge">Client Project</span>
+                    </div>
+                    <p class="card-description">Luxury villa rental website design with elegant aesthetics, booking system, and property showcase with Tour guide packages and tour arranging.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Tailwind</span>
+                        <span class="tech-tag">Json</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">GSAP</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://www.figma.com/design/WFG73UmoCcqhafVvNkIInZ/wega-villa-98?m=auto&t=AbwLIdBucpdbZgEB-6" class="btn-link">
+                            <i class='bx bxl-figma'></i>
+                            <span>View Design</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card" data-category="fullstack">
+                <div class="card-image">
+                    <img src="lan.png" alt="FlavourFlex">
+                    <div class="overlay-gradient"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>FlavourFlex</h3>
+                        <span class="category-badge fullstack">Full Stack</span>
+                    </div>
+                    <p class="card-description">Recipe Recommendation System that helps users find recipes based on their leftover ingredients and cooking equipment with AI integration.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Expert System</span>
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/oneli-jayodya/FlavourFlex_System" class="btn-link">
+                            <i class='bx bxl-github'></i>
+                            <span>View Code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card" data-category="fullstack">
+                <div class="card-image">
+                    <img src="dash.png" alt="Hotel MISUKI">
+                    <div class="overlay-gradient"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Hotel MISUKI</h3>
+                        <span class="category-badge fullstack">Full Stack</span>
+                    </div>
+                    <p class="card-description">Complete hotel management system with room reservation, booking management, and customer service features.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">SQL Server</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/oneli-jayodya/Hotel-Room-Reservation-" class="btn-link">
+                            <i class='bx bxl-github'></i>
+                            <span>View Code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card" data-category="fullstack">
+                <div class="card-image">
+                    <img src="Screenshot 2025-06-14 211137.png" alt="Skill Hunt">
+                    <div class="overlay-gradient"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Skill Hunt</h3>
+                        <span class="category-badge fullstack">Full Stack</span>
+                    </div>
+                    <p class="card-description">Job portal system for undergraduates and part-time workers to find jobs, apply, and conduct interviews.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">Tailwind</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Swing</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/oneli-jayodya/job-portal-system" class="btn-link">
+                            <i class='bx bxl-github'></i>
+                            <span>View Code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card" data-category="fullstack">
+                <div class="card-image">
+                    <img src="weather.png" alt="Weather App">
+                    <div class="overlay-gradient"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Weather App</h3>
+                        <span class="category-badge fullstack">Full Stack</span>
+                    </div>
+                    <p class="card-description">Modern weather application showing current weather details by searching any city worldwide with beautiful UI.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenWeather API</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/oneli-jayodya/weather-API" class="btn-link">
+                            <i class='bx bxl-github'></i>
+                            <span>View Code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frontend Projects -->
+            <div class="portfolio-card" data-category="frontend">
+                <div class="card-image">
+                    <img src="clothshop.png" alt="clothes shop System">
+                    <div class="overlay-gradient"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Online Clothing Shop</h3>
+                        <span class="category-badge frontend">Front End</span>
+                    </div>
+                    <p class="card-description">Front-end e-commerce application for browsing and view clothing items.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/oneli-jayodya/Shop" class="btn-link">
+                            <i class='bx bxl-github'></i>
+                            <span>View Code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card" data-category="frontend">
+                <div class="card-image">
+                    <img src="flowerShop.png" alt="flower shop System">
+                    <div class="overlay-gradient"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Online Flower Shop</h3>
+                        <span class="category-badge frontend">Front End</span>
+                    </div>
+                    <p class="card-description">Front-end e-commerce application for browsing and view flowers.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/oneli-jayodya/flower_shop" class="btn-link">
+                            <i class='bx bxl-github'></i>
+                            <span>View Code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend Projects -->
+            <div class="portfolio-card" data-category="backend">
+                <div class="card-image">
+                    <img src="main menu.png" alt="Library System">
+                    <div class="overlay-gradient"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>NANASA Library System</h3>
+                        <span class="category-badge backend">Backend</span>
+                    </div>
+                    <p class="card-description">Comprehensive library management system for managing books, members, borrowing and returning processes efficiently.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">C++</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/oneli-jayodya/Library_System" class="btn-link">
+                            <i class='bx bxl-github'></i>
+                            <span>View Code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card" data-category="backend">
+                <div class="card-image">
+                    <img src="bookheaven.jpg" alt="Book Heaven">
+                    <div class="overlay-gradient"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Book Heaven</h3>
+                        <span class="category-badge backend">Backend</span>
+                    </div>
+                    <p class="card-description">Comprehensive database management system designed for an online book-purchasing platform with inventory management.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">PgAdmin</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/oneli-jayodya/Book_Heaven" class="btn-link">
+                            <i class='bx bxl-github'></i>
+                            <span>View Code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UI/UX Designs -->
+            <div class="portfolio-card" data-category="uiux">
+                <div class="card-image">
+                    <img src="flav.png" alt="FlavourFlex Mobile">
+                    <div class="overlay-gradient"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>FlavourFlex Mobile</h3>
+                        <span class="category-badge uiux">UI/UX</span>
+                    </div>
+                    <p class="card-description">Mobile app design for the recipe recommendation system with intuitive user interface and modern aesthetics.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">Mobile Design</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://www.figma.com/design/FCsNmujHwpxlJMN1LbFUek/FlavourFlex?m=auto&t=AbwLIdBucpdbZgEB-6" class="btn-link">
+                            <i class='bx bxl-figma'></i>
+                            <span>View Design</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card" data-category="uiux">
+                <div class="card-image">
+                    <img src="hospital.png" alt="Hospital Mobile">
+                    <div class="overlay-gradient"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Hospital Mobile App</h3>
+                        <span class="category-badge uiux">UI/UX</span>
+                    </div>
+                    <p class="card-description">Healthcare mobile application design with patient management, appointment booking, and medical records.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">Healthcare</span>
+                        <span class="tech-tag">Mobile UI</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://www.figma.com/design/tkcakPCgwqZbnuH0RXJwTY/hospital-mobile-app?m=auto&t=pAOTQKtfsRFYr4lt-6" class="btn-link">
+                            <i class='bx bxl-figma'></i>
+                            <span>View Design</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card" data-category="uiux">
+                <div class="card-image">
+                    <img src="villa.png" alt="Wega Villa">
+                    <div class="overlay-gradient"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Wega Villa</h3>
+                        <span class="category-badge uiux">UI/UX</span>
+                        <span class="client-badge">Client Project</span>
+                    </div>
+                    <p class="card-description">Luxury villa rental website design with elegant aesthetics, booking system, and property showcase.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">Web Design</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://www.figma.com/design/WFG73UmoCcqhafVvNkIInZ/wega-villa-98?m=auto&t=AbwLIdBucpdbZgEB-6" class="btn-link">
+                            <i class='bx bxl-figma'></i>
+                            <span>View Design</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card" data-category="uiux">
+                <div class="card-image">
+                    <img src="bank.png" alt="Money Payer Bank">
+                    <div class="overlay-gradient"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Money Payer Bank</h3>
+                        <span class="category-badge uiux">UI/UX</span>
+                    </div>
+                    <p class="card-description">Modern banking mobile app design with secure transactions, account management, and financial tracking.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">Mobile Banking</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://www.figma.com/design/2XuzOh9Rnn4cuYzfGhaalf/Online-bank?m=auto&t=AbwLIdBucpdbZgEB-6" class="btn-link">
+                            <i class='bx bxl-figma'></i>
+                            <span>View Design</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card" data-category="uiux">
+                <div class="card-image">
+                    <img src="Screenshot 2025-06-14 211137.png" alt="Skill Hunt Design">
+                    <div class="overlay-gradient"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Skill Hunt Web Design</h3>
+                        <span class="category-badge uiux">UI/UX</span>
+                    </div>
+                    <p class="card-description">Job portal web design with user-friendly interface for job seekers and recruiters with modern UI patterns.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">Job Portal</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://www.figma.com/design/2Y4D7JXZoZI7Vp4zZfq0L6/Skill-Hunt?m=auto&t=AbwLIdBucpdbZgEB-6" class="btn-link">
+                            <i class='bx bxl-figma'></i>
+                            <span>View Design</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- contact -->
+     <section class="contact" id="contact">
+        <h2 class="heading">Contact<span>Me!</span></h2>
+        <form id="contact-form">
+            <div class="input-box">
+            <input type="text" name="name" placeholder="Full Name" required 
+                    pattern="^[a-zA-Z\s]{2,50}$" 
+                    title="Only letters and spaces, 2–50 characters">
+                    
+            <input type="email" name="email" placeholder="Email" required 
+                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
+                    title="Enter a valid email address">
+            </div>
+
+            <div class="input-box">
+            <input type="text" name="phone" placeholder="Mobile No" 
+                    pattern="^\d{10}$" 
+                    title="Enter a 10-digit phone number">
+                    
+            <input type="text" name="subject" placeholder="Email Subject" 
+                    pattern=".{3,100}" 
+                    title="Subject must be at least 3 characters">
+            </div>
+
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required
+                    pattern=".{10,1000}" 
+                    title="Message should be at least 10 characters"></textarea>
+
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+     </section>
+
+     <!-- footer  -->
+      <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by Oneli | All Rights Reserved</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+      </footer>
+
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
