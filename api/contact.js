@@ -49,7 +49,7 @@ export default async function handler(req, res) {
     }
 
     // Configure Nodemailer transporter
-    const transporter = nodemailer.createTransporter({
+    const transporter = nodemailer.createTransport({
       service: 'gmail', // or use 'smtp' for custom SMTP
       auth: {
         user: process.env.EMAIL_USER, // Your email
